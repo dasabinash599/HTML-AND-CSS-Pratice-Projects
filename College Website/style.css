@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    padding: 20px 8%;
+    border-bottom: 1px solid #ddd;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+.hero{
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.hero h2{
+    font-size: 42px;
+}
+.button{
+    padding: 12px 25px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+section{
+    padding: 60px 8%;
+    text-align: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.cards article{
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.facilities{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.facilities div{
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+footer{
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+@media screen and (max-width: 700px){
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav a{
+        margin: 5px;
+    }
+    .cards,
+    .facilities{
+        grid-template-columns: 1fr;
+    }
+    .hero h2{
+        font-size: 30px;
+    }
+}

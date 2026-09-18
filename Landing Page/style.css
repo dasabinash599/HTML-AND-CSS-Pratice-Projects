@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    padding: 20px 8%;
+    border-bottom: 1px solid #ddd;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h1 {
+    margin: 0;
+}
+.nav-links{
+    display: flex;
+    gap: 25px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+}
+.hero{
+    min-height: 500px;
+    padding: 60px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.hero div{
+    max-width: 500px;
+}
+.hero h2{
+    font-size: 45px;
+}
+.hero p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+.hero img{
+    width: 400px;
+    max-width: 100%;
+}
+.button{
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.features{
+    padding:50px 8%;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.cards article{
+    width: 250px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+@media (max-width: 700px){
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links{
+        flex-wrap: wrap;
+    }
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero h2{
+        font-size: 32px;
+    }
+    .cards{
+        flex-direction: column;
+        text-align: center;
+    }
+}
